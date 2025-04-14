@@ -285,6 +285,37 @@ img {
   text-align: left;
 }
 
+/* Preview */
+.preview {
+  background: url('../images/video-background.jpg') center center/cover
+    no-repeat;
+}
+
+.preview__container {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.preview__title {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.preview__description {
+  max-width: 600px;
+  margin: 1rem auto 4rem;
+}
+
+.priview__video-wrapper {
+  position: relative;
+}
+
+.preview__video-wrapper img {
+  max-width: 900px;
+  border-radius: 10px;
+}
+
 /* Media Queries */
 @media (max-width: 992px) {
   /* Hero */
