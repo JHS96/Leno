@@ -312,6 +312,7 @@ img {
 }
 
 .preview__video-wrapper img {
+  width: 100%;
   max-width: 900px;
   border-radius: 10px;
 }
