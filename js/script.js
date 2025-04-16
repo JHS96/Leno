@@ -2,9 +2,27 @@ document.addEventListener('DOMContentLoaded', function () {
   // Mobile Menu
   const toggleButton = document.querySelector('.navbar__mobile-menu-toggle');
   const mobileMenu = document.querySelector('.navbar__mobile-menu-items');
+  const mobileMenuLinks = document.querySelectorAll(
+    '.navbar__mobile-menu-link'
+  );
+  const mobileMenuSocialLinks = document.querySelectorAll(
+    '.navbar__mobile-menu-link--primary'
+  );
 
   toggleButton.addEventListener('click', function () {
     mobileMenu.classList.toggle('active');
+  });
+
+  mobileMenuLinks.forEach((item) => {
+    item.addEventListener('click', function () {
+      mobileMenu.classList.remove('active');
+    });
+  });
+
+  mobileMenuSocialLinks.forEach((item) => {
+    item.addEventListener('click', function () {
+      mobileMenu.classList.remove('active');
+    });
   });
 
   // Video Modal
