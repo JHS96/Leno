@@ -599,6 +599,12 @@ img {
   padding: 10rem 2rem 6rem;
 }
 
+.inner-header__title {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
 /* Pricing */
 .pricing {
   background-color: var(--tertiary-color);
@@ -655,6 +661,39 @@ img {
   padding: 3rem 2rem;
   color: #9f9caf;
   text-align: center;
+}
+
+/* Details Features */
+.details-features {
+  background-color: var(--tertiary-color);
+  padding: 4rem 2rem;
+}
+
+.details-features__title {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.details-features__list-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.details-features__list-item i {
+  color: var(--primary-color);
+}
+
+.details-features__list-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 /* Media Queries */
@@ -822,5 +861,11 @@ img {
 
   .modal__content iframe {
     width: 100%;
+  }
+
+  /* Detailes Features */
+  .details-features__list-item {
+    flex-direction: column;
+    text-align: center;
   }
 }
